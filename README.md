@@ -1,88 +1,122 @@
- 🎯 Narrative Nexus
+# 🚀 Narrative Nexus  
+### 🧠 Dynamic NLP-Powered Customer Review Intelligence Platform  
 
-### Dynamic Text Analysis System
-
-Narrative Nexus is a Streamlit-based NLP application that analyzes customer reviews using:
-
-* Sentiment Detection
-* Extractive Summary
-* Topic Distribution
-* Keyword Extraction
-* Word Cloud
-* Combined Visualization Dashboard
+🔗 **Live Demo:**  
+https://narrative-nexus-lyuetvyqfgkrchwlbk3evj.streamlit.app/
 
 ---
 
-## 📁 Project Structure
+## ✨ Overview
+
+**Narrative Nexus** is an end-to-end Natural Language Processing (NLP) web application that analyzes customer reviews and transforms raw text into actionable insights.
+
+The system integrates machine learning models, topic modeling, and interactive visualization into a unified Streamlit dashboard.
+
+This project demonstrates practical implementation of:
+
+- Supervised Sentiment Classification  
+- Topic Modeling using LDA  
+- Extractive Text Summarization  
+- Keyword & Word Cloud Visualization  
+- Interactive Data Visualization  
+
+---
+
+## 🎯 Core Features
+
+### 🔵 1. Sentiment Detection
+- Classifies reviews into **Positive / Neutral / Negative**
+- Displays prediction confidence
+- Visual sentiment distribution chart
+
+---
+
+### 🟣 2. Extractive Summarization
+- LSA-based summary generation
+- Highlights key review insights
+- Produces concise, meaningful summaries
+
+---
+
+### 🟢 3. Topic Modeling (LDA)
+- Identifies hidden themes within reviews
+- Displays topic probability distribution
+- Shows top representative keywords per topic
+
+---
+
+### 🟡 4. Word Cloud Visualization
+- Removes stopwords
+- Highlights dominant keywords
+- Visual representation of frequent terms
+
+---
+
+### 🔴 5. Unified Analytics Dashboard
+- Sentiment pie chart
+- Topic probability bar chart
+- Keyword importance visualization
+- Word cloud
+- All insights in a single interface
+
+---
+
+## 🏗 Architecture Overview
 
 ```
-.
+Narrative-Nexus/
+│
 ├── app.py
-├── models/
-│   ├── vectorizer.pkl
-│   ├── model.pkl
-│   ├── label_encoder.pkl
-│   ├── lda_model_v1.gensim
-│   ├── lda_model_v1.gensim.state
-│   ├── lda_model_v1.gensim.expElogbeta.npy
-│   └── dictionary_v1.gensim
-├── Infosys/
-│   └── Training notebooks
 ├── requirements.txt
-└── README.md
+├── README.md
+└── models/
+    ├── model.pkl
+    ├── vectorizer.pkl
+    ├── label_encoder.pkl
+    ├── lda_model_v1.gensim
+    ├── lda_model_v1.gensim.state
+    ├── lda_model_v1.gensim.expElogbeta.npy
+    └── dictionary_v1.gensim
 ```
 
 ---
 
-## 🚀 Features
+## ⚙️ Technology Stack
 
-### 1️⃣ Sentiment Detection
+| Category | Tools |
+|----------|-------|
+| Programming Language | Python |
+| Web Framework | Streamlit |
+| ML Model | TF-IDF + Logistic Regression |
+| Topic Modeling | Gensim LDA |
+| NLP Processing | NLTK |
+| Visualization | Matplotlib, WordCloud |
 
-Predicts Positive / Neutral / Negative with probability pie chart and top contributing words.
+---
 
-### 2️⃣ Extractive Summary
+## 🧠 Machine Learning Components
 
-Shows top 3 key sentences + actionable insights.
-
-### 3️⃣ Topic Distribution
-
-Displays topic probabilities and top words for each topic (LDA model).
-
-### 4️⃣ Word Cloud
-
-Generates a cloud of most frequent meaningful words.
-
-### 5️⃣ Visualization Dashboard
-
-Shows sentiment chart, top words, topic distribution, and word cloud together.
+- TF-IDF Vectorization for feature extraction  
+- Logistic Regression for sentiment classification  
+- Label Encoding for multi-class prediction  
+- LDA (Latent Dirichlet Allocation) for topic discovery  
+- Pre-trained models integrated into production-ready app  
 
 ---
 
 ## 🛠 Installation
 
-### Clone the repository
-
 ```bash
-git clone https://github.com/springboard5678x/Dynamic-Text-Analysis-System.git
-cd Dynamic-Text-Analysis-System
-```
-
-### Create & activate virtual environment
-
-```bash
+git clone https://github.com/ManishaGurugubelli/Narrative-Nexus.git
+cd Narrative-Nexus
 python -m venv .venv
 .venv\Scripts\activate
-```
-
-### Install dependencies
-
-```bash
 pip install -r requirements.txt
 ```
 
 ---
 
-## ▶️ Run the Application
+## ▶ Run Locally
 
 ```bash
 streamlit run app.py
@@ -90,39 +124,26 @@ streamlit run app.py
 
 ---
 
-## 📦 Required Models (place inside `/models`)
+## 📦 Model Files
 
-* vectorizer.pkl
-* model.pkl
-* label_encoder.pkl
-* lda_model_v1.gensim
-* dictionary_v1.gensim
-* lda_model_v1.gensim.state
-* lda_model_v1.gensim.expElogbeta.npy
+Pre-trained ML and LDA models are included inside the `models/` directory for demonstration purposes.
 
 ---
 
-## 📊 Technologies Used
+## 💡 Learning Highlights
 
-* Python
-* Streamlit
-* Scikit-learn
-* Gensim LDA
-* NLTK
-* Matplotlib / WordCloud
+- End-to-end NLP pipeline development  
+- Multi-model integration in a single web application  
+- Handling imbalanced sentiment classes  
+- Topic coherence optimization  
+- Deployment-ready Streamlit architecture  
+- Cloud deployment using Streamlit Community Cloud  
 
 ---
 
 ## 👩‍💻 Author
 
-Gurugubelli Manisha
+**Manisha Gurugubelli**
 
-Infosys Springboard Internship Project
-
----
-
-## 📄 License
-
-MIT License
-
+Originally developed during internship and independently refined for portfolio presentation.
 
